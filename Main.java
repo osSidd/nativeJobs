@@ -4,6 +4,8 @@ public class Main {
       int num2 = myfunc(23, 234);
       System.out.println(num);
       System.out.println(num2);
+      Second sec = new Second();
+      System.out.println(sec.sum);
     }
 
     public static int myfunc(int num){
