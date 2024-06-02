@@ -1,20 +1,22 @@
+import java.util.Scanner;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {      
-      int num = myfunc(23);
-      int num2 = myfunc(23, 234);
-      System.out.println(num);
-      System.out.println(num2);
-      Second sec = new Second();
-      System.out.println(sec.sum);
-    }
+      Scanner sc = new Scanner(System.in);
+      String str = sc.nextLine();
+      System.out.println(str);
+      sc.close();
 
-    public static int myfunc(int num){
-      System.out.println("Hi there, how are you?");
-      return num + 5;
-    }
+      LocalDateTime dt = LocalDateTime.now();
+      System.out.println(dt);
 
-    public static int myfunc(int num, int num2){
-      System.out.println("Hi there, how are you?");
-      return num + num2;
+      ArrayList<String> cars = new ArrayList<String>();
+      cars.add("BMW");
+      cars.add("Honda");
+      cars.set(0, "Mazda");
+      System.out.println(cars.get(0));
     }
   }
